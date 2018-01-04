@@ -7,6 +7,7 @@ RUN apt-get update \
 	&& rm -r /var/lib/apt/lists/*
 
 # Default command
+ARG envserver
 
 # Install Node.js
 RUN apt-get update \
