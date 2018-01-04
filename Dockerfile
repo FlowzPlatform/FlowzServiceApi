@@ -8,6 +8,8 @@ RUN apt-get update \
 
 # Default command
 
+ARG serverkey
+
 # Install Node.js
 RUN apt-get update \
 	&& apt-get install --yes curl
