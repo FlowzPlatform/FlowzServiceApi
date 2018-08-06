@@ -5,7 +5,6 @@ $(document).on("click", ".smooth-scroll", function(event) {
       scrollTop: $($.attr(this, "href")).offset().top
   }, 500);
 });
-
 // G-Form custom components
 try {
   var class_g_form = '.g-form';
@@ -452,7 +451,6 @@ try {
   console.log(err)
 }
 // G-Form JS ends
-
 // Progressbar component
 try {
   var progress = $('progressbar').attr('progress');

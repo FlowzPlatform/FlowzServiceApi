@@ -100,6 +100,16 @@ const ecatalogs = require('./ecatalogs/ecatalogs.service.js');
 
 
 
+const category = require('./category/category.service.js');
+
+
+
+
+const webtools = require('./webtools/webtools.service.js');
+
+
+
+
 module.exports = function () {
   const app = this; // eslint-disable-line no-unused-vars
   app.configure(flowsDirListing);
@@ -157,4 +167,6 @@ module.exports = function () {
   app.configure(flyers);
   app.configure(ecatalogCategory);
   app.configure(ecatalogs);
+  app.configure(category);
+  app.configure(webtools);
 };
